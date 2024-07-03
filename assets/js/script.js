@@ -21,10 +21,10 @@ async function getStatus(e) {
 function displayStatus(data) {
     let heading = "API Key Status";
     let results = `<div>Your key is valid until</div>`;
-    results += `<div> class="key-status">${data.expiry}</div>`;
+    results += `<div class="key-status">${data.expiry}</div>`;
 
-    document.getElementsById("resultsModalTitle").innerText = heading;
-    document.getElementsById("results-content").innerHTML = results;
+    document.getElementById("resultsModalTitle").innerText = heading;
+    document.getElementById("results-content").innerHTML = results;
 
     resultsModal.show();
 };
